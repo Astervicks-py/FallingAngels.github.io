@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Falling Angels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4fe059a60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- First page containing user info -->
+    <div id="userInfo">
+        <!-- <div class="nm">
+            <button class="namebtn">Name</button>
+            <input type="text"  placeholder="Username" id="name" required />
+        </div> -->
+        <div>
+            <h1>FALLING ANGELS</h1>
+        </div>
+        <div class="img">
+            <img src="img/IMG-0_1.jpg">
+        </div>
+        <button id="submit" onclick="start()">Play</button>
+    </div>
+    <!-- This is the you lose page -->
+    <div id="loss">
+				        <h2>Game Over</h2>
+				        <i><h3>Score:<span id="gameScore">0</span></h3></i>
+				        <button type="submit"onclick="start()" id="btn"
+	>Try Again</button>
+				 </div>
+    
+    <!-- This is the start if the game code -->
+    <div id="game">
+        <div id="scoreBoard">
+            <h4>Score:<span id="score"></span></h4>
+            <h4 id="player">Astervicks</h4>
+        </div>
+        <div id="gameScreen">
+        
+            <div id="block"></div>
+            <div id="character"></div>
+        </div>
+    <!-- Game controls -->
+        <div class="controls">
+            <button onclick="moveLeft()" id="leftBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button onclick="moveRight()"id="rightBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    <!-- End of game code -->
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
